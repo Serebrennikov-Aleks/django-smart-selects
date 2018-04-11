@@ -74,7 +74,7 @@
 
                 $.getJSON(target_url, function (j) {
                     var i, width;
-                    auto_choose = j.length === 1 && auto_choose;
+                    auto_choose = j.length && auto_choose;
 
                     var selected_values = {};
                     // if val and initial_parent have any common values, we need to set selected options.
